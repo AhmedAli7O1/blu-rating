@@ -23,23 +23,18 @@
 
 * init the plugin on this div with your preferred options.
 
-    * with default options
-
 ```javascript
 
+// with default options
 $('#container').bluRating();
 
-```
-
-    * with editable option set to false 
-
-```javascript
-
+// or with editable option set to false 
 $('#container').bluRating({ editable: false });
 
+
 ```
 
-    * now you can style them in your css
+* now you can style them in your css
 
 ```css
 
