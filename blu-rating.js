@@ -5,8 +5,8 @@
 
         // set defult options
         var options = {
-            editable: true,
-            starCount: 5
+            editable: true,     // determine whether user can rate or make it readonly 
+            starCount: 5        // number of stars in the rating
         };
 
         // override default options by user options 
