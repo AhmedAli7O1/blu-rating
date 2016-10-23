@@ -6,9 +6,9 @@
 
 # Usage
 
-1. place a div somewhere in your html, than give it reasonable id.
+* place a div somewhere in your html, than give it reasonable id.
 
-    * for readonly mode add "rating" attribute to this div 
+    > for readonly mode add "rating" attribute to this div 
 
 ```html
 
@@ -21,10 +21,9 @@
 ```
 
 
-2. init the plugin on this div with your preferred options.
+* init the plugin on this div with your preferred options.
 
-
-* with default options
+    * with default options
 
 ```javascript
 
@@ -32,7 +31,7 @@ $('#container').bluRating();
 
 ```
 
-* with editable option set to false 
+    * with editable option set to false 
 
 ```javascript
 
@@ -40,7 +39,7 @@ $('#container').bluRating({ editable: false });
 
 ```
 
-3. now you can style them in your css
+    * now you can style them in your css
 
 ```css
 
