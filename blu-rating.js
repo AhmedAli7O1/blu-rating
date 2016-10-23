@@ -52,7 +52,7 @@
         // then trigger rating:selected contains rating value 
         .click(function() {
             container.children().off('mouseenter mouseleave');
-            container.trigger('rating:selected', this.id);
+            container.trigger('rating:selected', $(this).attr('data-blustar-num'));
         });
 
         // return container object for seek of Chaining

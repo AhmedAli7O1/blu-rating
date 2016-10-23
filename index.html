@@ -2,22 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <!-- include font-awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" 
             rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        
+        <style>
+        
+            /* style the container e.g add padding, margin ...etc */ 
+            #container {
+                padding-left: 10px;
+            }
+
+            /* use this to style font-awesome stars just like any font styling */
+            .blu-star {
+                font-size: 2em;
+                color: red;
+            }
+
+        </style>
+    
     </head>
     <body>
 
-        <div id="container"></div>
-        <div id="container2" rating="4"></div>
+        <!-- rating box with pre predefined rating value to view  --> 
+        <div id="container" rating="4"></div>
 
+        <!-- include jquery and blu-rating plugin --> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="blu-rating.js"></script>
+        
+        <!-- init blu-rating plugin and listen to user selection -->
         <script>
-            $('#container').bluRating();
+
+            $('#container').bluRating({
+                editable: true
+            })
             
-            $('#container2').bluRating({
-                editable: false
+            .on('rating:selected', function (e, rate) {
+                alert('Your rate is: ' + rate);
             });
+
         </script>
     </body>
 </html>
